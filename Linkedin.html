@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="linkedin.css" />
+    <!-- Font Awesome cdn link for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    <title>Linkedin</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="flex main">
+        <div class="flex search">
+          <i
+            class="fa-brands fa-linkedin linkedin-icons"
+            style="color: #19598a"
+          ></i>
+          <input type="text" placeholder="search" id="search" />
+        </div>
+
+        <!-- Font awesome icons in navbar -->
+        <div class="flex div-icons">
+          <div class="flex div-icons-inside">
+            <span class="span-icons">
+              <ul class="nav-ul">
+                <li><i class="fa-solid fa-house-chimney icons"></i></li>
+                <li>Home</li>
+              </ul>
+            </span>
+            <span class="span-icons">
+              <ul class="nav-ul">
+                <li><i class="fa-solid fa-people-arrows icons"></i></li>
+                <li>My Network</li>
+              </ul>
+            </span>
+            <span class="span-icons">
+              <ul class="nav-ul">
+                <li><i class="fa-solid fa-briefcase icons"></i></li>
+                <li>Jobs</li>
+              </ul>
+            </span>
+            <span class="span-icons">
+              <ul class="nav-ul">
+                <li><i class="fa-solid fa-comment-dots icons"></i></li>
+                <li>Messaging</li>
+              </ul>
+            </span>
+            <span class="span-icons">
+              <ul class="nav-ul">
+                <li><i class="fa-solid fa-bell icons"></i></li>
+                <li>Notifications</li>
+              </ul>
+            </span>
+            <span class="span-icons">
+              <ul class="nav-ul">
+                <li><i class="fa-solid fa-user icons" style="color: #000000;"></i></li>
+                <li>
+                  Me
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                </li>
+              </ul>
+            </span>
+            <span class="span-icons">
+              <ul class="nav-ul option-icon">
+                <li><i class="fa-solid fa-bars icons" ></i></li>
+              </ul>
+            </span>
+          </div>
+          <div class="flex div-icons-inside">
+            <span class="span-icons">
+              <ul class="nav-ul">
+                <li><i class="fa-solid fa-border-none icons"></i></li>
+                <li>
+                  For Business<i
+                    class="fa-solid fa-caret-down"
+                    style="color: #000000"
+                  ></i>
+                </li>
+              </ul>
+            </span>
+            <span class="span-icons" id="last-nav-icon">
+              <ul class="nav-ul">
+                <li>
+                  <a href="#" style="color: rgb(218, 177, 130)"
+                    >Try 1 month of Premium for ₹0</a
+                  >
+                </li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Div Content section -->
+
+    <!-- Div Content left section -->
+    <main id="content">
+      <div id="left-content">
+        <div id="left-top-content">
+          <div><img src="../media/background.jpg" class="left-top-section left-top-image" alt="No image found"></div>
+          <img src="../media/my.jpg" id="left-top-profile-img" alt="No image found">
+          <div class="left-top-content-sections part-1"><div class="para-container"><p class="Profile-name"><b> Mahesh Kori</b></p><P>Associate Analyst at Deloitte
+          </P></div></div>
+          <div class="left-top-content-sections part-2"><p class="para hover-grey">Profile Viewers</p><p class="para hover-grey para1">View all analytics</p></div>
+          <div class="left-top-content-sections part-3 hover-grey"><p style="color: rgb(115, 119, 119);">Strengthen your Profile with an AI writing assistant</p><p>Try Premium for RS 0</p></div>
+          <div class="left-top-content-sections part-4 hover-grey"><p>My items</p></div>
+        </div>
+
+        <div id="left-bottom-content">
+          <div><span class="headings-in-blue">Recent</span><span class="button-icons"  onclick="showmore(event)"><i id="Recent" class="fa-solid fa-angle-down down-arrow" ></i></span></div>
+          <div class="content" id="content-1" >
+            <p class="hover-grey"><i class="fa-solid fa-people-roof " style="color: #000000;"></i> Bootstrap framework for building</p>
+            <p class="hover-grey"><i class="fa-solid fa-hashtag" style="color: #000000;"></i> Bootstrap framework for building</p>
+            <p class="hover-grey">See all</p>
+          </div>
+          <div><span class="headings-in-blue">Groups</span><span class="button-icons" onclick="showmore(event)"><i id="Groups"class="fa-solid fa-angle-down down-arrow" ></i></span></div>
+          <div class="content" id="content-2" >
+             <p class="hover-grey"><i class="fa-solid fa-people-roof" style="color: #000000;"></i> Bootstrap framework for building</p>
+             <p class="hover-grey"><i class="fa-solid fa-people-roof" style="color: #000000;"></i> Bootstrap framework for building</p>
+             <p class="hover-grey">See all</p>
+          </div>
+          <div><span class="headings-in-blue">Events</span><span class="button-icons" ><i class="fa-solid fa-plus down-arrow" ></i></span></div>
+          <div><span class="headings-in-blue">Followed Hashtags</span><span class="button-icons-50" onclick="showmore(event)"><i id="Hashtags" class="fa-solid fa-angle-down down-arrow" ></i></span></div>
+          <div class="content" id="content-3">
+            <p class="hover-grey"><i class="fa-solid fa-hashtag" style="color: #000000;"></i> Bootstrap framework for building</p>
+            <p class="hover-grey"><i class="fa-solid fa-hashtag" style="color: #000000;"></i> Bootstrap framework for building</p>
+            <p class="hover-grey">See all</p>
+          </div>
+          <div class="content-last hover-grey" >Discover more</div>
+        </div>
+      </div>
+
+      <!-- Div Content mid section -->
+      <div id="mid-content">
+        <div id="mid-top-content">
+          <div class="margin">
+            <ul class="ul">
+              <li><img src="../media/my.jpg" alt="no image found" id="post-img" /></li>
+              <li>
+                <input id="start-post" type="text" placeholder="Start a post" />
+              </li>
+            </ul>
+          </div>
+          <div class="margin">
+            <span class="start-post-img"
+              ><i
+                class="fa-solid fa-image icons"
+                style="color: rgb(61, 159, 189)"
+              ></i
+              >Media</span
+            >
+            <span class="start-post-img"
+              ><i
+                class="fa-solid fa-calendar-days icons"
+                style="color: #e88426"
+              ></i
+              >Event</span
+            >
+            <span class="start-post-img"
+              ><i class="fa-solid fa-newspaper icons" style="color: #f2683a"></i
+              >Write Article</span
+            >
+          </div>
+        </div>
+
+
+        <hr style="width: 80%; margin-left: 1em; display: inline-block" align="left"/>
+        <span> Sort by:Top<i class="fa-solid fa-caret-down" style="color: #000000"></i></span>
+
+
+        <div id="mid-bottom-content">
+          <div id="post-profile">
+         <img src="../media/my.jpg" alt="No image found">
+          <div>
+            <p class="Profile-name"><strong> Jitendra Rahul Kumar</strong></p>
+            <p>Followers 800000+</p>
+            <p>2 days ago</p>
+          </div>
+          </div>
+          <p>Join us at the Microsoft AI Partner Training Roadshow for an immersive one-day event on May 15 in Santa Clara, CA.</p>
+          <div id="content-post">
+            <img src="../media/post.jpg" alt="">
+          </div>
+          <div id="post-buttons">
+            <hr>
+            <div style="text-align: center;">
+              <i class="fa-regular fa-thumbs-up post-btns" ></i>
+              <i class="fa-regular fa-comment post-btns" ></i>
+              <i class="fa-solid fa-repeat post-btns" ></i>
+              <i class="fa-solid fa-paper-plane post-btns" ></i>
+            </div>
+          </div>
+        </div>
+
+        <div id="mid-bottom-content">
+          <div id="post-profile">
+         <img src="../media/my.jpg" alt="No image found">
+          <div>
+            <p class="Profile-name"><strong> Jitendra Rahul Kumar</strong></p>
+            <p>Followers 800000+</p>
+            <p>2 days ago</p>
+          </div>
+          </div>
+          <p>Join us at the Microsoft AI Partner Training Roadshow for an immersive one-day event on May 15 in Santa Clara, CA.</p>
+          <div id="content-post">
+            <img src="../media/post.jpg" alt="">
+          </div>
+          <div id="post-buttons">
+            <hr>
+            <div style="text-align: center;">
+              <i class="fa-regular fa-thumbs-up post-btns" ></i>
+              <i class="fa-regular fa-comment post-btns" ></i>
+              <i class="fa-solid fa-repeat post-btns" ></i>
+              <i class="fa-solid fa-paper-plane post-btns" ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Div Content right section -->
+      <div id="right-content">
+        <div id="right-top-content">
+          <h3 id="right-content-h">Linkedin News</h3>
+          <ul class="right">
+            <li class="right-li hover-grey">Fewer takers for personal loans</li>
+            <li class="right-li hover-grey">Luxury brands charm buyers</li>
+            <li class="right-li hover-grey">How firm can attract top talent</li>
+            <li class="right-li hover-grey">Ceo pays surges post-pandemic</li>
+            <li class="right-li hover-grey">More funds for tech startups</li>
+            <li class="right-li hover-grey">Fewer takers for personal loans</li>
+            <li class="right-li hover-grey">Luxury brands charm buyers</li>
+            <li class="right-li hover-grey">How firm can attract top talent</li>
+            <li class="right-li hover-grey">Ceo pays surges post-pandemic</li>
+            <li class="right-li hover-grey">More funds for tech startups</li>
+            <li class="right-li right-li-6  hover-grey">Fewer takers for personal loans</li>
+            <li class="right-li right-li-7 hover-grey">Luxury brands charm buyers</li>
+            <li class="right-li right-li-8 hover-grey">How firm can attract top talent</li>
+            <li class="right-li right-li-9 hover-grey">Ceo pays surges post-pandemic</li>
+            <li class="right-li right-li-10 hover-grey">More funds for tech startups</li>
+          </ul>
+          <div>
+          <button id="button" onclick="showmore(event)" name="button">Show more <i class="fa-solid fa-angle-down" style="color: #000000;"></i></button>
+        </div>
+        </div>
+      </div>
+    </main>
+
+
+
+    <script src="../scripts/Linkedin.js"></script>
+  </body>
+</html>

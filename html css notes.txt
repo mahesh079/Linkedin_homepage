@@ -1,0 +1,119 @@
+<!-- HTML -->
+.html and .htm are both valid extensions for HTML files but for .htm we need to tell our server to serve .htm files
+
+hr tag is used to make a horizontal line
+
+<sub> tag and <sup> tags can be used to write formulas or squares
+
+html by default ignores blank spaces and new lines so if we want to include them we can use <pre></pre> tag
+
+to structure our website we can use 3 tags
+<Header>
+<main>
+<footer>
+
+Inside <main> tag we can have our sections
+<main>
+<section></section>
+</main>
+
+
+Inline elements take space as they require to fit the content inside them(eg <span> <button> <img> <input> <label> <strong> <sub> <sup> <textarea>)
+
+Block elemenets take the 100% width as per their root element(eg <div> <p> <main> <hr> <header> <footer> <form> <h1> to <h6> <table> <ul><li> <video>)
+
+If display is block then justify content will not work
+
+if display is inline then width will not work (span has inline display by default)
+
+To align text in center use "text-align: center" property when display is block
+
+
+
+<!-- Size units -->
+
+1)avaoid using pixels since it is not responsive
+2)to make nav bar use vw ,vh or %
+3)1em unit takes 16px bydefault since it is universal for all elements but if we change the unit of parent container then 1em inside child container  
+will inherit it 
+4) rem takes the font size from root element that is <html></html> and it is also by default 16px
+5) vmin takes the smallest side of the device in computer and laptops it takes height since it is the smallest side and in
+mobile devices it takes width since it is the smallest unit
+6)vmax takes the biggest side of the device. In computer and laptops it takes width since it is the biggest side and in
+mobile devices it takes height since it is the biggest unit
+
+<!-- To make div or block elements center -->
+<!-- Margin auto means take equal margin on x axis -->
+<!-- we can also add margin to y axis when we gave margin:auto eg margin:30px auto -->
+1)give a width and make margin auto
+
+<!-- To make a scroll bar inside a container  -->
+
+1) use property overflow:scroll
+2) overflow:auto will show scroll bar if our content overflows through our container
+3) text-overflow:ellipses property shows 3 dots if content overflows
+4)overflow-x and overflow-y can also be used individually
+
+<!-- Box model -->
+1)It contains element,padding,border and margin 
+2)box-sizing:border-box property makes the element to keep its width same it was mentioned with width property but is we give padding then width mentioned changes
+
+<!-- Flex box properties only work in flex box-->
+<!-- Apply these on the container not on individual items -->
+1)To align items center horizntally justify-content:center is the property
+2)To align items center vertically align-items:center is the property
+3)USe flex direction to change the direction of allignmnt of items
+4)Flex-wrap:wrap to wrap items
+5)align:content:center to center the items if their are more than 1 lines formed by wrap items
+
+
+<!-- Grid layout Part-1-->
+1)Used to divide our page in rows and columns
+2)To make grid display:grid is the property
+3) grid-template-columns is the property we can use to divide our grid in columns eg grid-template-columns:120px 100px this will create 2 columns one of 120px and other of 100px.
+To create rows grid-template-rows:300px 300px
+4)if their are 3 elements in our grid then one by one they get filled our columns 1st will go in 1st column 2nd in second and 3rd in 1st column again
+5)Border lines of columns and rows are known as grid lines 
+6)Each line is given number from 1 and also we can give negative numbers to our grid lines. We can also give name to our grid lines
+7)To position our elements inside grid according to grid lines we can use grid-row: 2/3; grid-column: 1/2;  this means our element will be
+ positioned starting from grid row line number 2 to line number 3 and in columns it will be positioned from line number 1 to 2
+8)If their is alredy an existing item on the place we want to place our current item then the existing item will shift from its position 
+9)If we want them to overlap then we can give same grid-row: 2/3; grid-column: 1/2; property to the existing item
+10) or to set position we can also use grid-row start,grid-row-end ,grid-column-start,grid-column-end
+11) To name our grid lines grid-template-columns:[one]120px [two]100px
+12)grid-column: one/two this will also work
+
+<!-- Grid layout part-2 -->
+1)We can also give name to our cells that is the space between the grid lines
+2)eg grid-template-areas:"nav nav nav""side article article""footer footer footer"; this will create a grid of 3 columns 3 rows with the given names
+3)      .item-1 {
+    grid-area: nav;
+  }
+  .item-2{
+    grid-area:  article;
+  }
+
+  out item 1 will take whole space where it is nav and item 2 will take space where it is article
+4) fr unit is used to make our columns take fraction of the available width eg "grid-template-columns: 1fr 1fr 1fr 1fr"
+ or we can also do it by using repeat function "grid-template-columns:repeat(4,1fr)" 
+5)gap is used to give gap between the columns dont use padding in grid  
+6)justify-items:center is used to center items horizontally
+7)align-items:center is used to center items vertically
+8)we can also center individual property using align-self:center
+9)place-content:center centers the items horizontally as well as vertically
+
+<!-- Float and clear -->
+<!-- Float and clear were used earlier when we didn't had flex box or grid -->
+1)Float property is used to allign our element to a direction eg float:left will make our element to float on the top left area of the parent and it will alllow 
+content on its right but if the image is bigger than the container then it will overflow to correct this use "display:flow-root" or "overflow:auto" on the container
+2)Claer property is used if we want no content i a particular direction of a element eg "clear:right" will not allow any other element to take place on right "clear:both" will not allow 
+any item on left and right both
+
+
+<!--More on CSS selectors -->
+1) ".box:first-child{background-color-red}" this means if .box is first first child of its parent then make its background color red
+2)if we want to select first line of our elemnt then we can use ".box::first-line{color:yellow}"
+3)".box:nth-child(even){background-color-red}" will make bg red of all the child at even position
+4)".box:nth-child(odd){background-color-red}" will make bg red of all the child at odd position
+5)".box:nth-child(1){background-color-red}" will make bg red of the child at 1st position
+6)".box:nth-last-child(1){background-color-red}" will make bg red of the child at 1st position from last

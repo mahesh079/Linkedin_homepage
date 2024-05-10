@@ -1,0 +1,1 @@
+1)For icons we have used the Font awesome website using cdn link

@@ -1,0 +1,437 @@
+body {
+  background-color: rgb(238, 238, 238);
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar css */
+#navbar {
+  background-color: rgb(255, 255, 255);
+  height: 3.3rem;
+  margin-top: -5px;
+  width: 100%;
+  /* margin: auto; */
+}
+.main {
+  width: fit-content;
+  margin:auto;
+}
+.linkedin-icons {
+  font-size: 2.5rem;
+  width: fit-content;
+  margin: 1px 1px 2px 2px;
+}
+.icons {
+  font-size: 1.1rem;
+  margin: 1px 1px 2px 2px;
+  color: black;
+}
+.flex {
+  display: flex;
+}
+.search {
+  width: 38em;
+  height: 4em;
+  background-color: rgb(255, 255, 255);
+}
+#search {
+  height: 2.1rem;
+  width: 20em;
+  margin: 5px 0px 0px 5px;
+  background-color: #eaf1f7;
+  border: none;
+  border-radius: 3px;
+}
+.div-icons {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  width: fit-content;
+}
+.div-icons-inside {
+  height: fit-content;
+}
+.nav-ul {
+  list-style-type: none;
+  width: 6em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+.option-icon{
+  display: none;
+}
+/* Div Content section main*/
+
+#content {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  margin: auto;
+}
+
+/* div left content css */
+#left-content {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+}
+
+#left-top-content {
+  width: 16em;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  margin: 1em;
+  border: 0.5px solid rgb(204, 203, 203);
+  border-radius: 10px;
+}
+
+
+/* div left top content css */
+.left-top-image {
+  height: 6vh;
+  width: 16em;
+  z-index: -1;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#left-top-profile-img {
+  display: block;
+  width: 5.1em;
+  margin: -2.5em auto auto auto;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.part-1 {
+  height: 9.2em;
+  margin-top: -4em;
+  border-bottom: 1px solid rgb(204, 199, 199);
+}
+
+.para-container {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  width: fit-content;
+  margin: 5em auto auto 2em;
+}
+.part-1 div p {
+  width: fit-content;
+  margin: auto;
+}
+
+.part-2,
+.part-3 {
+  height: 7em;
+  border-bottom: 1px solid rgb(204, 199, 199);
+}
+.para-1 {
+  margin-top: -30px;
+}
+
+.para {
+  height: fit-content;
+  font-size: 1em;
+  width: 100%;
+  color: gray;
+  text-align: center;
+  display: inline-block;
+}
+
+.part-3 p {
+  display: inline-block;
+  height: 1em;
+}
+.part-4{
+  height: 3.1em;
+}
+.part-4 p {
+  margin-left: 1em;
+  font-size: 1.2em;
+  height:fit-content;
+  display: inline-block;
+}
+
+.Profile-name:hover{
+text-decoration: underline;
+}
+/* This property is applied to all the contents in our main section who have class="hover-grey"  */
+.hover-grey:hover {
+  background-color: rgb(223, 220, 220);
+}
+
+/* div left bottom content css */
+#left-bottom-content {
+  width: 16em;
+  background-color: rgb(255, 255, 255);
+  margin: 1em;
+  border: 0.5px solid rgb(204, 203, 203);
+  border-radius: 10px;
+  padding: 1px;
+  min-height: fit-content;
+  font-size: 1em;
+}
+
+#left-bottom-content div p{
+  margin-block-start: 0%;
+}
+.content{
+  min-height: 7.2em;
+  max-height: fit-content;
+  border-bottom: 1px solid gray;
+}
+
+.content-last{
+  height: 2.7em;
+  text-align: center;
+  line-height: 30px;
+}
+
+.headings-in-blue{
+  color: rgb(17, 93, 192);
+}
+
+.headings-in-blue:hover{
+  text-decoration: underline;
+}
+#left-bottom-content div span{
+font-size: 1.1em;
+}
+.button-icons {
+  text-align: right;
+  width: 73%;
+  display: inline-block;
+  margin-top: 0.5em;
+  font-size:2em;
+}
+.button-icons-50 {
+  text-align: right;
+  width: 35%;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.down-arrow{
+  color: rgb(201, 197, 192);
+}
+
+.down-arrow:hover{
+  color: black;
+  background-color: #eaf1f7;
+  border-radius: 50%;
+}
+
+
+
+/* div mid content css */
+#mid-content {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  text-align: left;
+}
+
+/* mid top content css */
+#mid-top-content {
+  width: 42em;
+  min-height: 10em;
+  max-height: fit-content;
+  background-color: rgb(255, 255, 255);
+  margin: 1em;
+  align-items: center;
+  border: 0.5px solid rgb(204, 203, 203);
+  border-radius: 10px;
+}
+
+.margin {
+  height: 2.7em;
+  width: 100%;
+  margin-top: 1em;
+  text-align: center;
+}
+.ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: -2em;
+}
+
+#post-img {
+  border-radius: 50%;
+  height: 3.7em;
+}
+
+#start-post {
+  width: 34em;
+  height: 3.5em;
+  margin: 0 0 0 0.6em;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+.start-post-img {
+  display: inline-block;
+  width: 30%;
+  margin-top: 2em;
+  text-align: center;
+}
+.start-post-img:hover {
+  height: 3em;
+  background-color: rgb(228, 225, 225);
+  border-radius: 5px;
+}
+
+/* Mid bottom content css */
+
+#mid-bottom-content {
+  width: 42em;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  margin: 1em;
+  border: 0.5px solid rgb(204, 203, 203);
+  border-radius: 10px;
+}
+
+#post-profile{
+  min-height: 8em;
+  border-radius: 10px;
+  display: flex;
+}
+
+#post-profile div p{
+  margin-left: 1em;
+}
+
+#post-profile img{
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+}
+
+#content-post{
+  min-height: 30em;
+  max-height: fit-content;
+  width: 100%;
+  margin: 1em 0px;
+}
+#content-post img{
+  width: 100%;
+}
+#post-buttons{
+  min-height: 5em;
+  max-height: fit-content;
+}
+
+.post-btns{
+  color: black;
+  width: 22%;
+  font-size: 2em;
+  margin-top: 0.4em;
+  height: 1.5em;
+  text-align: center;
+}
+
+.post-btns:hover{
+  background-color: rgb(226, 226, 220);
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 1px;
+  text-shadow: 1px 1px 1px 1px;
+}
+/* div right content css */
+#right-content {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+}
+
+#right-top-content {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+  margin: 1em;
+  border: 0.5px solid rgb(204, 203, 203);
+  border-radius: 10px;
+}
+
+.right {
+  /* display: inline-block; */
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-block-start: 0%;
+  padding-inline-start: 20px;
+  margin-block-end: 0%;
+}
+
+#right-content-h {
+  margin: 10px 10px;
+  display: inline-block;
+}
+
+.right-li {
+  margin: 5px;
+  font-size: 1.3em;
+}
+
+#btn {
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgb(212, 210, 210);
+}
+
+#btn:hover {
+  background-color: rgb(192, 192, 192);
+}
+
+
+/* Media queries for responsiveness */
+
+@media (max-width:1460px){
+  .search{
+    width: 25em;
+  }
+  #search{
+    width: 15em;
+  }
+}
+
+@media (max-width:1000px){
+#right-content{
+  display: none;
+}
+.search{
+  width: 15em;
+}
+}
+
+@media (max-width:850px){
+#left-top-content{
+  width: 42em;
+  text-align: center;
+  font-size: 1em;
+}
+.left-top-image{
+  width: 100%;
+  height: 8em;
+}
+#left-top-profile-img{
+  width: 8em;
+  height: 8em;
+}
+#left-bottom-content{
+  display: none;
+}
+#content{
+  display: block;
+}
+.search{
+width: 3em;
+}
+
+#search{
+  display: none;
+}
+#last-nav-icon{
+  display: none;
+}
+}
+
